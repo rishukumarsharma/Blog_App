@@ -54,7 +54,7 @@ function Header() {
   ];
 
   return (
-    <header style={{ backgroundColor: 'rgb(117 98 171/var(--tw-bg-opacity))' }} className="py-3 shadoww-full flex justify-between items-center px-2 rounded-full border border-black drop-shadow-solid">
+    <header style={{ backgroundColor: '#008DDA' }} className="py-3 shadoww-full flex justify-between items-center px-2 border border-black drop-shadow-solid">
       <Container>
         <nav className="flex align-items-center justify-between">
           <div className="mr-4">
@@ -72,9 +72,9 @@ function Header() {
                     //className={`p-4 ${item.active ? 'text-white' : 'text-black'}`}
                     //className="text-white active:text-black"
                     //className={`p-4 ${{isActive} ? 'text-black' : 'text-white'}`}
-                    className={`inline-block font-semibold rounded-full transition-all text-xs px-5 py-2 border uppercase hover:no-underline hover:bg-pink-400 hover:text-black ${
+                    className={`inline-block font-semibold rounded-full transition-all text-xs px-5 py-2 border uppercase hover:no-underline hover:bg-white hover:text-black ${
                       item.active && item.slug === "/"
-                        ? "bg-pink-400 drop-shadow-solid border border-black hover:drop-shadow-solid-extend text-black"
+                        ? " drop-shadow-solid border border-white hover:drop-shadow-solid-extend "
                         : "text-white border-purple hover:border-white"
                     }`}
                   >
@@ -121,7 +121,7 @@ function Header() {
             <Link
               to="/"
               onClick={toggleMenu}
-              className="font-semibold rounded-full transition-all text-xs px-5 py-2 uppercase drop-shadow-solid border text-white hover:border-white hover:text-black hover:no-underline hover:bg-pink-400 hover:drop-shadow-solid-extend"
+              className="font-semibold rounded-full transition-all text-xs px-5 py-2 uppercase drop-shadow-solid border text-white hover:border-white hover:text-white text-white hover:no-underline hover:bg-pink-400 hover:drop-shadow-solid-extend"
             >
               Home
             </Link>
